@@ -12,20 +12,24 @@
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-primary" id="add-new" data-toggle="modal" data-target="#exampleModal">New Note</button>
-                <div id="notes"></div>
+                <div id="notes">
+                    <!-- Here comes the notes list -->
+                </div>
             </div>
-            <div class="col" id="info">
-                <div class="row">
-                    <div class="col note-date">Date example</div>
-                    <div class="col note-name">Note name</div>
-                </div>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Description</span>
+            <div class="col">
+                <div id="note">
+                    <div class="row">
+                        <div class="col" id="note-date">Date example</div>
+                        <div class="col" id="note-name">Note name</div>
                     </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Description</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea" id="note-desc"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="edit-button">Save</button>
                 </div>
-                <button class="btn btn-primary">Save</button>
             </div>
         </div>
     </div>
@@ -42,15 +46,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="input-group mb-3">
-                        <input type="date" class="form-control">
+                        <input type="date" class="form-control" id="new-note-date">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Name" id="new-note-name">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-primary" onclick="addNote()">Add</button>
                 </div>
             </div>
         </div>
