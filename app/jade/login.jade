@@ -1,0 +1,33 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="css/libs.min.css") 
+		link(rel="stylesheet", href="css/main.min.css")
+		script(src="js/libs.min.js") 
+		script(src="js/common.js")
+	body
+		.container
+			.wrapper.topmenu(style="display: none")
+				p.topmenuTitle Pendella
+
+				.wrapper.topmenuRight 
+					a.pnBtn Login
+					a.pnBtn Register
+
+			.wrapper.contentLogin
+				.loginLogo
+					img(src="/img/logo.png", alt="Pendella")
+				.panelLogin.pnPanel
+					.wrapper.loginForm
+						.wrapper.loginFormField
+							label(for="") Email:
+							input(type="text").pnInput
+						.wrapper.loginFormField
+							label(for="") Password:
+							input(type="password").pnInput
+						.wrapper.loginFormBtn
+							button.pnBtn Login

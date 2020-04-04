@@ -1,0 +1,192 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="css/libs.min.css")
+		//link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
+		link(rel="stylesheet", href="css/main.min.css")
+		script(src="js/libs.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+		//script(src="js/common.js")
+	body
+		header
+			.container
+				.wrapper
+					.title
+						img(src="img/logo.png", alt="logo")
+					button
+						| CREATE NEW NOTE
+		main
+			.container
+				.wrapper
+					.userInfo.wrapper
+						img(src="img/user.png", alt="user photo")
+						p.userName
+							| Alex Hlukhyi
+						p.userEmail
+							| o.hlukhyi@gmail.com
+						button
+							| Logout
+					.data.wrapper
+						.date
+							p
+								| 01.04.2020
+							.notes.wrapper
+								.note
+								.note
+								.note
+								.note
+								.note
+						.date
+							p
+								| 02.04.2020
+							.notes.wrapper
+								.note
+
+
+		//.topmenuLogo(style="background-image: url(img/top-logo.png)")
+		//.container
+		//	.topmenuTitle How To Use the Group Census Tool
+		//
+		//	.wrapper.topmenuManual
+		//		.wrapper.topmenuManualItem
+		//			img(src="img/img1.png", alt="")
+		//			p
+		//				| Add Employees and their family using the '+'
+		//				br
+		//				| (use same button image that is in the table)
+		//		.wrapper.topmenuManualItem
+		//			img(src="img/img2.png", alt="")
+		//			p Add all required information for the employee and their family
+		//		.wrapper.topmenuManualItem
+		//			img(src="img/img3.png", alt="")
+		//			p Double-check your information
+		//		.wrapper.topmenuManualItem
+		//			img(src="img/img4.png", alt="")
+		//			p Click Finish Census
+		//
+		//	.wrapper.topmenu
+		//		p.topmenuTitle Pendella
+		//
+		//		.wrapper.topmenuRight
+		//			button.pnBtn.topmenuBtn.topmenuBtnDownload
+		//				i.fas.fa-cloud-download-alt
+		//			button.pnBtn.topmenuBtn
+		//				i.fas.fa-times
+		//			a.pnBtn.topmenuBtn
+		//				i.fas.fa-sign-out-alt
+		//
+		//	.contentEmployees.pnPanel
+		//			.tableResponese
+		//				table
+		//					thead
+		//						tr
+		//							th(colspan="6").employeeTableTitle 5 Employees
+		//							th Medical
+		//							th
+		//								button.employeeTableBtn#btnAdd
+		//									i.fas.fa-plus
+		//					tbody
+		//						each val in [1, 2, 3, 4, 5]
+		//							tr
+		//								td 1
+		//								td Denis
+		//								td DenisLast
+		//								td 12
+		//								td Male
+		//								td Eligible
+		//								td EE
+		//								td
+		//									button.employeeTableBtn
+		//										i.fas.fa-times
+		//
+		//	.modal
+		//		.modalEmployee#modalEmployee
+		//
+		//			.wrapper.modalEmployeeTitle
+		//				p New Employee
+		//				.modalBtnClose.modalEmployeeClose
+		//					i.fas.fa-times
+		//
+		//			.modalEmployeeBodyFinish
+		//				.modalEmployeeBodyFinishCont
+		//					.wrapper.modalEmployeeFinishContent
+		//						div
+		//							i.fas.fa-check
+		//						p Employee added
+		//					.wrapper.modalEmployeeFinishBtn
+		//						button.modalEmployeeBtnClose Exit
+		//						button.modalEmployeeBtnAdd Add Another
+		//
+		//			.modalEmployeeBody
+		//				.tableResponese
+		//					table.employeeTable
+		//						tr
+		//							th
+		//							th First Name
+		//							th Last Name
+		//							th DOB
+		//							th Age
+		//							th Gender
+		//							th Annual Salary
+		//						tr
+		//							td.employeeColTitle Employee
+		//							td.employeeName
+		//								input(type="text").pendellaInput
+		//							td.employeeName
+		//								input(type="text").pendellaInput
+		//							td.employeeDOB
+		//								input(type="text",placeholder="mm/dd/yyyy").pendellaInput
+		//							td.employeeAge
+		//								input(type="text" readonly).pendellaInput
+		//							td.employeeGander
+		//								select.pendellaSelect
+		//									option Female
+		//									option Male
+		//							td.employeeSalary
+		//								input(type="text").pendellaInput
+		//						tr
+		//							td.employeeColTitle Spouse
+		//							td.employeeName
+		//								input(type="text").pendellaInput
+		//							td.employeeName
+		//								input(type="text").pendellaInput
+		//							td.employeeDOB
+		//								input(type="text",placeholder="mm/dd/yyyy").pendellaInput
+		//							td.employeeAge
+		//								input(type="text" readonly).pendellaInput
+		//							td.employeeGander
+		//								select.pendellaSelect
+		//									option Female
+		//									option Male
+		//							td.employeeSalary
+		//								button.employeeSalaryDelete
+		//									i.fas.fa-times
+		//
+		//
+		//				.wrapper.employeeControll
+		//					div
+		//						button.employeeControllBtn
+		//							i.fas.fa-plus
+		//							div Child
+		//						button.employeeControllBtn
+		//							i.fas.fa-plus
+		//							div Spouse
+		//					.wrapper.employeeEnrollment
+		//						.employeeEnrollmentTitle
+		//							p Enrollment Tiers
+		//						div
+		//							label Medical
+		//							select.pendellaSelect
+		//								option EE
+		//								option ES
+		//								option EC
+		//								option EF
+		//								option Declined
+		//
+		//			.wrapper.modalEmployeeBottom
+		//				button.modalEmployeeBtnClose.modalBtnClose Close
+		//				button.modalEmployeeBtnAdd Add
