@@ -8,26 +8,75 @@ html(lang="en")
 		link(rel="stylesheet", href="css/libs.min.css") 
 		link(rel="stylesheet", href="css/main.min.css")
 		script(src="js/libs.min.js") 
-		script(src="js/common.js")
+		script(src="js/slider.js")
 	body
-		.container
-			.wrapper.topmenu(style="display: none")
-				p.topmenuTitle Pendella
+		header
+			.logo
+				img(src="img/logo.png" alt="logo")
+			.container
+				.wrapper
+					.smalllogo
+						img(src="img/logo.png" alt="logo")
+					.menu
+						button#signin
+							| SIGN IN
+						button#signup
+							| SIGN UP
+		.slider
+			.slides
+				.slide.active
+					.wrapper
+						.slideContent(style="background-image: url(img/slides/1.png)")
+							.wrapper
+								h2(style="color: #d79922")
+									| STORE YOUR NOTES ONLINE
+								p(style="color: #d79922")
+									| FIREBASE DATABASE PROVIDES ACCESS TO YOUR DATA ANYTIME
+				.slide
+					.wrapper
+						.slideContent(style="background-image: url(img/slides/2.png)")
+							.wrapper
+								h2(style="color: #f13c1f")
+									| EDIT NOTES EVERYWHERE
+								p(style="color: #f13c1f")
+									| NOTEBOOK IS USABLE FROM ANY DEVICE AND SMARTPHONE
+				.slide
+					.wrapper
+						.slideContent(style="background-image: url(img/slides/3.png)")
+							.wrapper
+								h2(style="color: #4056a1")
+									| SIGN IN WITH GOOGLE
+								p(style="color: #4056a1")
+									| USE YOUR GOOGLE ACCOUNT TO SIGN IN AND USE NOTEBOOK
+			.controls
+				button#prev
+					img(src="img/prev.png" alt="prev")
+				.container.wrapper
+					#indicators
+				button#next
+					img(src="img/next.png" alt="next")
 
-				.wrapper.topmenuRight 
-					a.pnBtn Login
-					a.pnBtn Register
 
-			.wrapper.contentLogin
-				.loginLogo
-					img(src="/img/logo.png", alt="Pendella")
-				.panelLogin.pnPanel
-					.wrapper.loginForm
-						.wrapper.loginFormField
-							label(for="") Email:
-							input(type="text").pnInput
-						.wrapper.loginFormField
-							label(for="") Password:
-							input(type="password").pnInput
-						.wrapper.loginFormBtn
-							button.pnBtn Login
+
+
+		//.container
+		//	.wrapper.topmenu(style="display: none")
+		//		p.topmenuTitle Pendella
+		//
+		//		.wrapper.topmenuRight
+		//			a.pnBtn Login
+		//			a.pnBtn Register
+		//
+		//	.wrapper.contentLogin
+		//		.loginLogo
+		//			img(src="/img/logo.png", alt="Pendella")
+		//		.panelLogin.pnPanel
+		//			.wrapper.loginForm
+		//				.wrapper.loginFormField
+		//					label(for="") Email:
+		//					input(type="text").pnInput
+		//				.wrapper.loginFormField
+		//					label(for="") Password:
+		//					input(type="password").pnInput
+		//				.wrapper.loginFormBtn
+		//					button.pnBtn Login
