@@ -28,15 +28,15 @@ header
 				&:not(:first-child)
 					margin-left: 45px
 				&:hover
-					color: #d79922
+					color: $yellow
 	.logo
 		position: absolute
 		top: 0
 		left: 0
 		width: 0
 		height: 0
-		border-left: 250px solid #4056a1
-		border-top: 75px solid #4056a1
+		border-left: 250px solid $blue
+		border-top: 75px solid $blue
 		border-bottom: 75px solid transparent
 		border-right: 250px solid transparent
 		img
@@ -48,7 +48,7 @@ header
 .slider
 	width: 100%
 	height: 100vh
-	background-color: #f1f0eb
+	background-color: $grey
 	.slides
 		width: 100%
 		height: 100%
@@ -75,13 +75,13 @@ header
 						align-items: center
 						justify-content: center
 						h2
-							background-color: #f1f0eb
+							background-color: $grey
 							white-space: nowrap
 							font-family: 'Roboto Black', sans-serif
 							padding: 5px
 						p
 							font-size: 14px
-							background-color: #f1f0eb
+							background-color: $grey
 							font-family: 'Roboto Black', sans-serif
 							padding: 2px
 
@@ -105,9 +105,9 @@ header
 			box-sizing: border-box
 			border-radius: 50%
 			transition: 0.3s
-			border: #f1f0eb solid 1px
+			border: $grey solid 1px
 			&:hover
-				border: #d79922 solid 1px
+				border: $yellow solid 1px
 	#indicators
 		width: auto
 		display: flex
@@ -120,42 +120,41 @@ header
 			border-radius: 50%
 			box-sizing: border-box
 			transition: 0.2s
-			border: #d79922 solid 2px
+			border: $yellow solid 2px
 			&:not(.active):hover
 				border: #d79922 solid 4px
 		.active
 			background-color: #d79922
 
-
-//.contentLogin
-//	flex-direction: column
-//	justify-content: center
-//	align-items: center
-//	flex-wrap: nowrap
-//	height: 100%
-//	.loginLogo
-//		img
-//			max-width: 353px
-//			width: 100%
-//	.panelLogin
-//		width: max-content
-//		margin: 0 auto
-//		.pnBtn
-//			line-height: normal
-//		.loginForm
-//			flex-direction: column
-//		.loginFormField
-//			justify-content: space-between
-//			margin: 10px 0
-//			label
-//				margin-right: 10px
-//				margin-bottom: 0px
-//			input
-//				padding-top: 8px
-//				padding-bottom: 2px
-//
-//		.loginFormBtn
-//			justify-content: center
-//			margin: 5px 0
-//			.pnBtn
-//				font-size: 16px
+main
+	font-family: 'Roboto', sans-serif
+	margin-top: 80px
+	.container
+		.wrapper
+			.userInfo
+				width: 25%
+				.wrapper
+					flex-direction: column
+					align-items: center
+			.data
+				width: 75%
+				.wrapper
+					flex-direction: column
+					margin: 15px
+					.date
+						p
+							font-weight: bolder
+							border-bottom: black solid 1px
+						.notes
+							.wrapper
+								flex-direction: row
+								justify-content: flex-start
+								margin: 0 -5px
+								.note
+									flex: 1 0
+									box-sizing: border-box
+									margin: 5px
+									height: 200px
+									min-width: 200px
+									max-width: 250px
+									background-color: #efe1ba
