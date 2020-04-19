@@ -2,8 +2,26 @@ table
 	width: 100%
 
 a, button
-	cursor: pointer
-	background-color: transparent
-	border: none
+	font-family: 'Shark-Random-Funnyness', 'Roboto', sans-serif
+	font-size: 20px
+	white-space: nowrap
 	&:hover, &:active, &:focus, &:link, &:visited
 		text-decoration: none
+
+a
+	color: $darkgrey
+	&:hover
+		color: $yellow
+
+
+#new-note, #sign-out
+	box-sizing: content-box
+	background-color: $red
+	padding: 0 10px 10px
+	height: 30px
+	border-radius: 10px
+	transition: border 0.15s
+	margin: 1px
+	&:hover
+		border: $red solid 1px
+		margin: 0

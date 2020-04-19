@@ -1,31 +1,51 @@
 @media (max-width: 1024px)
 	header
 		background-color: $blue
-		color: white
+		box-shadow: 0 2px 15px rgba(0,0,0,0.3)
 		.container
-			.wrapper
-				justify-content: space-between
-				.smalllogo
-					display: block !important
+			justify-content: space-between
+			.top-bar
+				display: flex !important
+			.menu
+				a
+					color: white
 	.logo
 		display: none
 
+@media (max-width: 900px)
+	.note
+		flex-basis: calc(50% - 10px) !important
+
 @media (max-width: 625px)
+	header
+		padding: 0
 	.slider
 		display: none
-	.userInfo
+	.user-info
 		display: none
 	.data
 		width: 100% !important
+	#show-user-info
+		display: block
 
 @media (max-width: 480px)
-	header
-		height: 110px
-		.container
-			.wrapper
-				flex-wrap: nowrap
-				flex-direction: column
-				.smalllogo
-					text-align: center
-	main
-		margin-top: 120px
+	.top-bar
+		width: 100%
+		justify-content: space-between
+		&:after
+			content: ' '
+			display: block
+			width: 33px
+	.menu
+		display: none
+	#show-menu
+		display: block
+	#new-note
+		position: fixed
+		bottom: 25px
+		left: calc(50% - 77.635px)
+		margin: 0 auto
+		&:hover
+			left: calc(50% - 78.635px)
+	.note
+		flex-basis: calc(100% - 10px) !important

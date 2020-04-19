@@ -3,7 +3,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		title Document
+		title Your Notes | NoteBook ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
 		link(rel="stylesheet", href="css/libs.min.css")
 		//link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
@@ -16,40 +16,32 @@ html(lang="en")
 			.logo
 				img(src="img/logo.png" alt="logo")
 			.container
-				.wrapper
-					.smalllogo
-						img(src="img/logo.png" alt="logo")
-					.menu
-						button#newNote
-							| NEW NOTE
-						button#signOut
-							| SIGN OUT
+				.top-bar
+					button#show-user-info
+						i.fas.fa-bars
+					img(src="img/logo.png" alt="logo")
+				button#new-note
+					| CREATE NEW NOTE
 		main
 			.container
-				.wrapper
-					.userInfo
-						.wrapper
-							img(src="img/user.png", alt="user photo")
-							p.userName
-								| Alex Hlukhyi
-							p.userEmail
-								| o.hlukhyi@gmail.com
-					.data
-						.wrapper
-							.date
-								p
-									| 01.04.2020
-								.notes
-									.wrapper
-										.note
-										.note
-										.note
-										.note
-										.note
-										.note
-							.date
-								p
-									| 02.04.2020
-								.notes
-									.wrapper
-										.note
+				.user-info
+					img(src="img/user.png", alt="user photo")
+					p.userName
+						| Alex Hlukhyi
+					p.userEmail
+						| o.hlukhyi@gmail.com
+				.data
+					.date
+						p
+							| 01.04.2020
+						.notes
+							.note
+							.note
+							.note
+							.note
+							.note
+					.date
+						p
+							| 02.04.2020
+						.notes
+							.note
