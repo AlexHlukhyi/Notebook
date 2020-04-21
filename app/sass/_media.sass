@@ -4,11 +4,11 @@
 		box-shadow: 0 2px 15px rgba(0,0,0,0.3)
 		.container
 			justify-content: space-between
-			.top-bar
-				display: flex !important
-			.menu
-				a
-					color: white
+	.top-bar
+		display: flex !important
+	.menu
+		a
+			color: white
 	.logo
 		display: none
 
@@ -16,16 +16,29 @@
 	.note
 		flex-basis: calc(50% - 10px) !important
 
+@media (max-width: 720px)
+	.note
+		flex-basis: calc(100% - 10px) !important
+
 @media (max-width: 625px)
 	header
 		padding: 0
-	.slider
+	#side-bar
 		display: none
-	.user-info
-		display: none
+		position: fixed
+		justify-content: space-between
+		top: 0
+		left: 0
+		width: 50%
+		min-width: 200px
+		height: 100vh
+		background-color: white
+		margin: 0
+		box-shadow: 5px 0 25px rgba(0,0,0,0.3)
+		z-index: 1
 	.data
 		width: 100% !important
-	#show-user-info
+	#show-side-bar
 		display: block
 
 @media (max-width: 480px)
@@ -47,5 +60,3 @@
 		margin: 0 auto
 		&:hover
 			left: calc(50% - 78.635px)
-	.note
-		flex-basis: calc(100% - 10px) !important

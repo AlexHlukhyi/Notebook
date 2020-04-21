@@ -10,38 +10,117 @@ html(lang="en")
 		link(rel="stylesheet", href="css/main.min.css")
 		script(src="js/libs.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
-		//script(src="js/common.js")
+		script(src="js/common.js")
 	body
 		header
 			.logo
 				img(src="img/logo.png" alt="logo")
 			.container
 				.top-bar
-					button#show-user-info
+					button#show-side-bar(onclick="showSideBar();")
 						i.fas.fa-bars
 					img(src="img/logo.png" alt="logo")
 				button#new-note
 					| CREATE NEW NOTE
 		main
 			.container
-				.user-info
-					img(src="img/user.png", alt="user photo")
-					p.userName
-						| Alex Hlukhyi
-					p.userEmail
-						| o.hlukhyi@gmail.com
+				#side-bar
+					.user-info
+						img(src="img/user.png", alt="user photo")
+						p#user-name
+							| Alex Hlukhyi
+						p#user-email
+							| o.hlukhyi@gmail.com
+					button#sign-out
+						| SIGN OUT
 				.data
 					.date
 						p
-							| 01.04.2020
+							| 03.04.2020
 						.notes
 							.note
+								.note-head
+									p
+										| Note 1
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
 							.note
+								.note-head
+									p
+										| Note 2
+								p
+									| Cumque ducimus, ea incidunt laboriosam modi odio pariatur quas temporibus voluptas? Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
 							.note
+								.note-head
+									p
+										| Note 3
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
 							.note
-							.note
+								.note-head
+									p
+										| Note 4
+								p
+									| Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
 					.date
 						p
 							| 02.04.2020
 						.notes
 							.note
+								.note-head
+									p
+										| Note 1 abc
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
+							.note
+								.note-head
+									p
+										| Note 2 asd
+								p
+									| Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
+					.date
+						p
+							| 01.04.2020
+						.notes
+							.note
+								.note-head
+									p
+										| Note
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								.note-controls
+									button.edit-note
+										| Edit
+									button.delete-note
+										| Delete
+		#overlay(onclick='closeSideBar();')

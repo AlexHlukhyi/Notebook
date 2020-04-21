@@ -1,6 +1,3 @@
-table
-	width: 100%
-
 a, button
 	font-family: 'Shark-Random-Funnyness', 'Roboto', sans-serif
 	font-size: 20px
@@ -17,11 +14,26 @@ a
 #new-note, #sign-out
 	box-sizing: content-box
 	background-color: $red
-	padding: 0 10px 10px
-	height: 30px
-	border-radius: 10px
-	transition: border 0.15s
-	margin: 1px
+	transition: box-shadow 0.5s
 	&:hover
-		border: $red solid 1px
-		margin: 0
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)
+
+#new-note
+	padding: 0 20px 15px
+	height: 35px
+	border-radius: 10px
+
+#sign-out
+	margin: 15px 0
+	font-size: 16px
+	padding: 0 15px 10px
+	height: 25px
+	border-radius: 5px
+
+.edit-note
+	&:hover
+		color: $yellow
+
+.delete-note
+	&:hover
+		color: $red
