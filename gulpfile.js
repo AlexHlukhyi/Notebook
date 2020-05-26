@@ -53,7 +53,6 @@ function reload(done) {
   done();
 }
 
-
 function compileCSSlibs() {
 	return gulp.src('app/css/libs/*.css')
 		.pipe(concat('libs.css'))
@@ -90,10 +89,8 @@ function compileSass(done) {
 		done();
 }
 
-function compileJade2(done) {
+function compileJade(done) {
   return gulp.src('app/jade/**/*.jade')
-    // .pipe(watch('app/jade/**/*.jade'))
-    // .pipe(gulp_watch_jade('app/jade/**/*.jade', { delay: 100 }))
 		.pipe(
 			jade2({
 				pretty: true
@@ -103,7 +100,6 @@ function compileJade2(done) {
 		)
     .pipe(gulp.dest('app'))
     .pipe(browsersync.stream());
-  
     done();
 }
 
@@ -114,7 +110,6 @@ function watchFiles(done) {
 	gulp.watch('app/*.html', browsersync.reload);
 	gulp.watch('app/css/*.css', browsersync.reload);
   gulp.watch('app/js/**/*.js', browsersync.reload);
-  
   done();
 }
 
@@ -124,43 +119,37 @@ function removeDist(done) {
 	done();
 }
 
-
-function moveCssToDist(done) {
-	return gulp.src([ 
-		'app/css/libs.min.css',
-		'app/css/main.min.css'
-	]).pipe(gulp.dest('dist/css'));
-
+function moveImgToDist(done) {
+	return gulp.src([
+		'app/img/*',
+		'app/img/*/*'
+	]).pipe(gulp.dest('dist/img'));
 	done();
 }
 
 function moveHtmlToDist(done) {
-	return gulp.src('app/*.html').pipe(gulp.dest('dist/html'));
+	return gulp.src('app/*.html').pipe(gulp.dest('dist'));
 	done();
 }
 
 function moveCssToDist(done) {
-	return gulp.src([ 
-		'app/css/libs.min.css',
+	return gulp.src([
 		'app/css/main.min.css'
 	]).pipe(gulp.dest('dist/css'));
-
 	done();
 }
 
 function moveJSToDist(done) {
 	return gulp.src([
-		'app/js/libs.min.js',
 		'app/js/common.js'
 	]).pipe(gulp.dest('dist/js'));
-
 	done();
 }
 
 gulp.task('build',  
 	gulp.series(
-		removeDist,compileSass, compileCSSlibs, compileScripts, compileJade2,
-		moveHtmlToDist, moveCssToDist, moveJSToDist
+		removeDist, compileSass, compileScripts, compileJade,
+		moveHtmlToDist, moveCssToDist, moveJSToDist, moveImgToDist
 	), function(done) {
 		done();
 	}
@@ -178,4 +167,3 @@ exports.default = taskWatch;
 
 
 
- 

@@ -3,11 +3,9 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		title Your Notes | NoteBook ©
+		title NoteBook ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
-		//link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
-		//script(src="js/libs.min.js")
 		script(src="js/common.js")
 	body
 		header
@@ -18,7 +16,7 @@ html(lang="en")
 					button.modal-button(data-modal="side-bar")
 						i.fas.fa-bars
 					img(src="img/logo.png" alt="logo")
-				button.big-button.new-note
+				button.big-button.new-note.modal-button(data-modal="new-note")
 					i.fas.fa-plus
 					| CREATE NEW NOTE
 		main
@@ -31,7 +29,32 @@ html(lang="en")
 						p#user-email
 							| o.hlukhyi@gmail.com
 					button.small-button
+						i.fas.fa-sign-out-alt
 						| SIGN OUT
+				//.sign-in-section
+				//	p Use your credentials to sign in:
+				//	input#sign-in-email(type='text' placeholder='E-mail')
+				//	input#sign-in-password(type='password' placeholder='Password')
+				//	button.big-button
+				//		i.fas.fa-sign-in-alt
+				//		| SIGN IN
+				//	p Don't have an account?
+				//	button.small-button
+				//		i.fas.fa-user-plus
+				//		| SIGN UP
+				//.sign-up-section
+				//	p Enter your credentials to create new account:
+				//	input#sign-up-name(type='text' placeholder='Your name and surname')
+				//	input#sign-up-email(type='text' placeholder='E-mail')
+				//	input#sign-up-password(type='password' placeholder='Password')
+				//	input#sign-up-repeat-password(type='password' placeholder='Repeat password')
+				//	button.big-button.sign-in
+				//		i.fas.fa-user-plus
+				//		| SIGN UP
+				//	p Already have an account?
+				//	button.small-button.sign-in
+				//		i.fas.fa-sign-in-alt
+				//		| SIGN IN
 				.data
 					.date
 						p
@@ -126,3 +149,12 @@ html(lang="en")
 									button.delete-note
 										| Delete
 		.overlay
+		.modal(data-modal="new-note")
+			.new-note-section
+				p Enter needed information:
+				input#note-name(type='text' placeholder='Name of the note')
+				input#note-date(type='date')
+				textarea#note-description(maxlength=250)
+				button.big-button
+					i.fas.fa-plus
+					| CREATE
