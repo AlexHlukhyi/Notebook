@@ -1,39 +1,81 @@
 a, button
-	font-family: 'Shark-Random-Funnyness', 'Roboto', sans-serif
+	font-family: 'Pangolin', 'Roboto Black', sans-serif
 	font-size: 20px
 	white-space: nowrap
-	&:hover, &:active, &:focus, &:link, &:visited
-		text-decoration: none
+	transition: color 0.3s
 
 a
 	color: $darkgrey
 	&:hover
 		color: $yellow
 
-
-#new-note, #sign-out
-	box-sizing: content-box
-	background-color: $red
-	transition: box-shadow 0.5s
-	&:hover
-		box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)
-
-#new-note
-	padding: 0 20px 15px
-	height: 35px
-	border-radius: 10px
-
-#sign-out
-	margin: 15px 0
+i
+	margin-right: 10px
 	font-size: 16px
-	padding: 0 15px 10px
-	height: 25px
-	border-radius: 5px
 
-.edit-note
-	&:hover
-		color: $yellow
-
-.delete-note
-	&:hover
+button
+	&.big-button, &.small-button
+		background-color: $red
+		transition: box-shadow 0.5s
+		margin: 10px
+		&:hover
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)
+	&.big-button
+		padding: 7.5px 10px
+		border-radius: 10px
+	&.small-button
+		padding: 5px 7.5px
+		border-radius: 7.5px
+		font-size: 16px
+	&.edit-note
+		color: $green
+		&:hover
+			color: $lightgreen
+	&.delete-note
 		color: $red
+		&:hover
+			color: $lightred
+
+.note-controls
+	button
+		&:not(:last-child)
+			margin-right: 15px
+
+.overlay
+	opacity: 0
+	visibility: hidden
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100vh
+	background-color: rgba(0,0,0,0.4)
+	transition: 0.3s all
+	z-index: 20
+	&:hover
+		background-color: rgba(0,0,0,0.2)
+
+.side-bar.active
+	left: 0
+	opacity: 1
+	visibility: visible
+	z-index: 30
+
+.modal.active, .overlay.active
+	opacity: 1
+	visibility: visible
+
+.modal
+	opacity: 0
+	visibility: hidden
+	width: 100%
+	max-width: 500px
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 30
+	box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2)
+	text-align: center
+	padding: 30px
+	background-color: #fff
+	transition: 0.3s all

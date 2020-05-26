@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Your Notes | NoteBook ©</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
-    <link rel="stylesheet" href="css/libs.min.css"/>
-    <!--link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")-->
+    <!--link(rel="stylesheet", href="css/libs.min.css")-->
     <link rel="stylesheet" href="css/main.min.css"/>
-    <script src="js/libs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!--script(src="js/libs.min.js")-->
     <script src="js/common.js"></script>
   </head>
   <body>
@@ -18,19 +16,19 @@
       <div class="logo"><img src="img/logo.png" alt="logo"/></div>
       <div class="container">
         <div class="top-bar">
-          <button id="show-side-bar" onclick="showSideBar();"><i class="fas fa-bars"></i></button><img src="img/logo.png" alt="logo"/>
+          <button data-modal="side-bar" class="modal-button"><i class="fas fa-bars"></i></button><img src="img/logo.png" alt="logo"/>
         </div>
-        <button id="new-note">CREATE NEW NOTE</button>
+        <button class="big-button new-note"><i class="fas fa-plus"></i>CREATE NEW NOTE</button>
       </div>
     </header>
     <main>
       <div class="container">
-        <div id="side-bar">
+        <div data-modal="side-bar" class="side-bar">
           <div class="user-info"><img src="img/user.png" alt="user photo"/>
             <p id="user-name">Alex Hlukhyi</p>
             <p id="user-email">o.hlukhyi@gmail.com</p>
           </div>
-          <button id="sign-out">SIGN OUT</button>
+          <button class="small-button">SIGN OUT</button>
         </div>
         <div class="data">
           <div class="date">
@@ -38,12 +36,12 @@
             <div class="notes">
               <div class="note">
                 <div class="note-head">
-                  <p>Note 1</p>
+                  <p><i class="fas fa-thumbtack"></i>Note 1</p>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
                 <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
+                  <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+                  <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
                 </div>
               </div>
               <div class="note">
@@ -121,6 +119,6 @@
         </div>
       </div>
     </main>
-    <div id="overlay" onclick="closeSideBar();"></div>
+    <div class="overlay"></div>
   </body>
 </html>

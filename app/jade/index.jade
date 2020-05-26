@@ -5,11 +5,9 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		title Your Notes | NoteBook ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
-		link(rel="stylesheet", href="css/libs.min.css")
-		//link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
+		//link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
-		script(src="js/libs.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+		//script(src="js/libs.min.js")
 		script(src="js/common.js")
 	body
 		header
@@ -17,21 +15,22 @@ html(lang="en")
 				img(src="img/logo.png" alt="logo")
 			.container
 				.top-bar
-					button#show-side-bar(onclick="showSideBar();")
+					button.modal-button(data-modal="side-bar")
 						i.fas.fa-bars
 					img(src="img/logo.png" alt="logo")
-				button#new-note
+				button.big-button.new-note
+					i.fas.fa-plus
 					| CREATE NEW NOTE
 		main
 			.container
-				#side-bar
+				.side-bar(data-modal="side-bar")
 					.user-info
 						img(src="img/user.png", alt="user photo")
 						p#user-name
 							| Alex Hlukhyi
 						p#user-email
 							| o.hlukhyi@gmail.com
-					button#sign-out
+					button.small-button
 						| SIGN OUT
 				.data
 					.date
@@ -41,13 +40,16 @@ html(lang="en")
 							.note
 								.note-head
 									p
+										i.fas.fa-thumbtack
 										| Note 1
 								p
 									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
 								.note-controls
 									button.edit-note
+										i.far.fa-edit
 										| Edit
 									button.delete-note
+										i.far.fa-trash-alt
 										| Delete
 							.note
 								.note-head
@@ -123,4 +125,4 @@ html(lang="en")
 										| Edit
 									button.delete-note
 										| Delete
-		#overlay(onclick='closeSideBar();')
+		.overlay

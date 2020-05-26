@@ -1,7 +1,7 @@
 header
 	height: 70px
 	min-width: 100%
-	font-family: 'Shark-Random-Funnyness', sans-serif
+	font-family: 'Pangolin', sans-serif
 	color: #4b4a45
 	padding: 0 25px
 	.container
@@ -14,7 +14,7 @@ header
 	button
 		display: none
 		color: white
-		margin-right: 15px
+		margin: 0 15px
 		i
 			font-size: 24px
 		&:hover
@@ -25,8 +25,9 @@ header
 	white-space: nowrap
 	align-self: center
 	font-size: 20px
-	padding-bottom: 10px
 	a
+		&:hover
+			color: $yellow
 		&:not(:first-child)
 			margin-left: 35px
 
@@ -55,26 +56,26 @@ main
 		padding: 0
 		margin: 0 -15px
 
-#side-bar
-	width: 25%
-	min-width: 200px
+.side-bar, .user-info
 	display: flex
 	flex-direction: column
 	align-items: center
-	margin: 15px
-	min-height: 330px
 
 .user-info
-	display: flex
-	flex-direction: column
-	align-items: center
 	img
 		width: 200px
+
+.side-bar
+	width: 25%
+	min-width: 200px
+	margin: 15px
+	min-height: 330px
+	transition: 0.3s all
 
 #user-name
 	font-size: 20px
 	margin-top: 15px
-	font-family: 'Roboto Black', sans-serif
+	font-family: 'Pangolin', 'Roboto Black', sans-serif
 
 #user-email
 	font-family: 'Roboto', sans-serif
@@ -109,24 +110,9 @@ main
 		box-shadow: 2px 2px 10px rgba(0,0,0,0.4)
 .note-head
 	width: 100%
-	padding-bottom: 10px
+	padding: 10px
 	display: flex
 	justify-content: center
 	p
 		font-size: 22px
-		font-family: 'Shark-Random-Funnyness', 'Roboto Black', sans-serif
-.note-controls
-	button
-		color: $darkgrey
-		transition: color 0.3s
-#overlay
-	display: none
-	position: fixed
-	top: 0
-	width: 100%
-	height: 100vh
-	background-color: rgba(0,0,0,0.4)
-	cursor: pointer
-	transition: background-color 0.2s
-	&:hover
-		background-color: rgba(0,0,0,0.2)
+		font-family: 'Pangolin', 'Roboto Black', sans-serif

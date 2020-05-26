@@ -5,22 +5,27 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		title Login | NoteBook ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
-		link(rel="stylesheet", href="css/libs.min.css")
+		//link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
-		script(src="js/libs.min.js")
+		script(src="js/common.js")
+		//script(src="js/libs.min.js")
 	body
 		header
 			.logo
 				img(src="img/logo.png" alt="logo")
 			.container
 				.top-bar
-					button#show-menu
+					button.modal-button(data-modal="auth-menu")
 						i.fas.fa-bars
 					img(src="img/logo.png" alt="logo")
 				.menu
-					a#sign-in
+					a
 						| SIGN IN
-					a#sign-up
+					a
 						| SIGN UP
 		main
 			container
+
+		.overlay
+		.modal(data-modal="auth-menu")
+			| HELLO BRUH

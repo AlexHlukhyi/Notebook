@@ -23,12 +23,13 @@
 @media (max-width: 625px)
 	header
 		padding: 0
-	#side-bar
-		display: none
+	.side-bar
+		opacity: 0
+		visibility: hidden
 		position: fixed
 		justify-content: space-between
 		top: 0
-		left: 0
+		left: -50%
 		width: 50%
 		min-width: 200px
 		height: 100vh
@@ -38,8 +39,11 @@
 		z-index: 1
 	.data
 		width: 100% !important
-	#show-side-bar
-		display: block
+	.menu
+		display: none
+	.top-bar
+		button
+			display: block !important
 
 @media (max-width: 480px)
 	.top-bar
@@ -49,14 +53,15 @@
 			content: ' '
 			display: block
 			width: 33px
-	.menu
-		display: none
-	#show-menu
-		display: block
-	#new-note
+	.new-note
 		position: fixed
 		bottom: 25px
-		left: calc(50% - 77.635px)
+		left: calc(50%)
+		transform: translate(-50%)
 		margin: 0 auto
 		&:hover
-			left: calc(50% - 78.635px)
+			left: calc(50%)
+
+@media (max-width: 420px)
+	.side-bar
+		left: -200px
