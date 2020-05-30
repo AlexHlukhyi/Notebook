@@ -6,9 +6,6 @@
 			justify-content: space-between
 	.top-bar
 		display: flex !important
-	.menu
-		a
-			color: white
 	.logo
 		display: none
 
@@ -38,10 +35,10 @@
 		margin: 0
 		box-shadow: 5px 0 25px rgba(0,0,0,0.3)
 		z-index: 1
-	.data
+	.notes
 		width: 100% !important
-	.menu
-		display: none
+	.note
+		flex-basis: calc(50% - 10px) !important
 	.top-bar
 		button
 			display: block !important
@@ -50,13 +47,20 @@
 	.top-bar
 		width: 100%
 		justify-content: space-between
+		img
+			margin: 0
 		&:after
 			content: ' '
 			display: block
 			width: 43px
-	.data
+			margin-right: 15px
+	.clear
+		display: block
+	.notes
 		&:last-child
 			margin-bottom: 90px
+	.note
+		flex-basis: calc(100% - 10px) !important
 	.new-note
 		position: fixed
 		bottom: 25px

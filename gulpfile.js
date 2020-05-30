@@ -105,7 +105,7 @@ function compileJade(done) {
 
 function watchFiles(done) {
   gulp.watch('app/sass/**/*.sass', gulp.series(compileSass));
-  gulp.watch('app/jade/**/*.jade', gulp.series(compileJade2));
+  gulp.watch('app/jade/**/*.jade', gulp.series(compileJade));
  
 	gulp.watch('app/*.html', browsersync.reload);
 	gulp.watch('app/css/*.css', browsersync.reload);

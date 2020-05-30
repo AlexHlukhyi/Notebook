@@ -1,3 +1,8 @@
+.clear
+	display: none
+	width: 43px
+	margin-left: 15px
+
 a, button
 	font-family: 'Pangolin', 'Roboto Black', sans-serif
 	font-size: 20px
@@ -26,6 +31,13 @@ input[type='date']
 	width: 190px
 	padding: 5px 10px
 
+input.wrong
+	border: 1px solid $red
+
+p.error
+	margin-top: 5px
+	color: $red
+
 button
 	&.big-button, &.small-button
 		background-color: $red
@@ -40,6 +52,8 @@ button
 		padding: 5px 7.5px
 		border-radius: 7.5px
 		font-size: 16px
+	&.edit-note, &.delete-note
+		font-size: 16px
 	&.edit-note
 		color: $green
 		&:hover
@@ -48,11 +62,6 @@ button
 		color: $red
 		&:hover
 			color: $lightred
-
-.note-controls
-	button
-		&:not(:last-child)
-			margin-right: 15px
 
 .overlay
 	opacity: 0

@@ -14,7 +14,8 @@
       <div class="logo"><img src="img/logo.png" alt="logo"/></div>
       <div class="container">
         <div class="top-bar">
-          <button data-modal="side-bar" class="modal-button"><i class="fas fa-bars"></i></button><img src="img/logo.png" alt="logo"/>
+          <button data-modal="side-bar" class="modal-button"><i class="fas fa-bars"></i></button>
+          <!--.clear--><img src="img/logo.png" alt="logo"/>
         </div>
         <button data-modal="new-note" class="big-button new-note modal-button"><i class="fas fa-plus"></i>CREATE NEW NOTE</button>
       </div>
@@ -22,7 +23,7 @@
     <main>
       <div class="container">
         <div data-modal="side-bar" class="side-bar">
-          <div class="user-info"><img src="img/user.png" alt="user photo"/>
+          <div class="user-info"><img src="img/logo-short.png" alt="user photo"/>
             <p id="user-name">Alex Hlukhyi</p>
             <p id="user-email">o.hlukhyi@gmail.com</p>
           </div>
@@ -31,7 +32,8 @@
         <!--.sign-in-section-->
         <!--	p Use your credentials to sign in:-->
         <!--	input#sign-in-email(type='text' placeholder='E-mail')-->
-        <!--	input#sign-in-password(type='password' placeholder='Password')-->
+        <!--	input#sign-in-password.wrong(type='password' placeholder='Password')-->
+        <!--	p.error Your e-mail or password are incorrect!-->
         <!--	button.big-button-->
         <!--		i.fas.fa-sign-in-alt-->
         <!--		| SIGN IN-->
@@ -52,90 +54,137 @@
         <!--	button.small-button.sign-in-->
         <!--		i.fas.fa-sign-in-alt-->
         <!--		| SIGN IN-->
-        <div class="data">
-          <div class="date">
-            <p>03.04.2020</p>
-            <div class="notes">
-              <div class="note">
-                <div class="note-head">
-                  <p><i class="fas fa-thumbtack"></i>Note 1</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-                <div class="note-controls">
-                  <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-                  <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-                </div>
-              </div>
-              <div class="note">
-                <div class="note-head">
-                  <p>Note 2</p>
-                </div>
-                <p>Cumque ducimus, ea incidunt laboriosam modi odio pariatur quas temporibus voluptas? Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
-              <div class="note">
-                <div class="note-head">
-                  <p>Note 3</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
-              <div class="note">
-                <div class="note-head">
-                  <p>Note 4</p>
-                </div>
-                <p>Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
+        <div class="notes">
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
             </div>
           </div>
-          <div class="date">
-            <p>02.04.2020</p>
-            <div class="notes">
-              <div class="note">
-                <div class="note-head">
-                  <p>Note 1 abc</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
-              <div class="note">
-                <div class="note-head">
-                  <p>Note 2 asd</p>
-                </div>
-                <p>Asperiores at eligendi eos eum labore quae ratione ullam voluptate voluptatem.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
+              <p>02.03.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
             </div>
           </div>
-          <div class="date">
-            <p>01.04.2020</p>
-            <div class="notes">
-              <div class="note">
-                <div class="note-head">
-                  <p>Note</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <div class="note-controls">
-                  <button class="edit-note">Edit</button>
-                  <button class="delete-note">Delete</button>
-                </div>
-              </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>My tasks</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Do sports</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
+              <p>02.03.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>My tasks</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Do sports</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
+              <p>02.03.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>My tasks</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-head">
+              <p><i class="fas fa-thumbtack"></i>Do sports</p>
+              <p>01.02.20</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
+            <div class="note-controls">
+              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
+              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
             </div>
           </div>
         </div>
