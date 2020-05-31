@@ -7,6 +7,7 @@
     <title>NoteBook ©</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/main.min.css"/>
+    <script src="js/autosize.min.js"></script>
     <script src="js/common.js"></script>
   </head>
   <body>
@@ -57,145 +58,56 @@
         <div class="notes">
           <div class="note">
             <div class="note-head"><i class="fas fa-thumbtack"></i>
-              <input id="note-name" type="text" placeholder="To do..."/>
+              <input id="note-name-1" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <textarea id="note-description" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <textarea id="note-description-1" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
             <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
           <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
-              <p>02.03.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>My tasks</p>
+            <div class="note-head"><i class="fas fa-thumbtack"></i>
+              <input id="note-name-2" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
+            <textarea id="note-description-2" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
           <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Do sports</p>
+            <div class="note-head"><i class="fas fa-thumbtack"></i>
+              <input id="note-name-3" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
+            <textarea id="note-description-3" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
           <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
+            <div class="note-head"><i class="fas fa-thumbtack"></i>
+              <input id="note-name-4" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
+            <textarea id="note-description-4" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
           <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
-              <p>02.03.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>My tasks</p>
+            <div class="note-head"><i class="fas fa-thumbtack"></i>
+              <input id="note-name-5" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Do sports</p>
-              <p>01.02.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
-              <p>01.02.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Buy bread</p>
-              <p>02.03.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>My tasks</p>
-              <p>01.02.20</p>
-            </div>
-            <p>Aspernatur assumenda blanditiis consectetur consequuntur delectus.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
-          </div>
-          <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Do sports</p>
-              <p>01.02.20</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
+            <textarea id="note-description-5" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
         </div>
       </div>
     </main>
-    <!--.overlay-->
-    <!--.modal(data-modal="new-note")-->
-    <!--	.new-note-section-->
-    <!--		p Enter needed information:-->
-    <!--		input#note-name(type='text' placeholder='Name of the note')-->
-    <!--		input#note-date(type='date')-->
-    <!--		textarea#note-description(maxlength=250)-->
-    <!--		button.big-button-->
-    <!--			i.fas.fa-plus-->
-    <!--			| CREATE-->
+    <div class="overlay"></div>
+    <div data-modal="new-note" class="modal">
+      <div class="new-note-section">
+        <p>Enter needed information:</p>
+        <input id="note-name" type="text" placeholder="Name of the note"/>
+        <input id="note-date" type="date"/>
+        <textarea id="note-description" maxlength="250"></textarea>
+        <button class="big-button"><i class="fas fa-plus"></i>CREATE</button>
+      </div>
+    </div>
   </body>
 </html>

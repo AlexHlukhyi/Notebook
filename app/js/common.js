@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded',function () {
+	autosize(document.querySelectorAll('textarea'));
+
 	var modalButtons = document.querySelectorAll('.modal-button');
 	var overlay = document.querySelector('.overlay');
 	var currentModal;

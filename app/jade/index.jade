@@ -6,6 +6,7 @@ html(lang="en")
 		title NoteBook ©
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
+		script(src="js/autosize.min.js")
 		script(src="js/common.js")
 	body
 		header
@@ -61,184 +62,55 @@ html(lang="en")
 					.note
 						.note-head
 							i.fas.fa-thumbtack
-							input#note-name(type='text' placeholder='To do...')
+							input#note-name-1(type='text' placeholder='To do...')
 							p 01.02.20
-						textarea#note-description(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						textarea#note-description-1(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
 						button.delete-note
 							i.far.fa-trash-alt
 							| Delete
 					.note
 						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Buy bread
-							p 02.03.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| My tasks
+							i.fas.fa-thumbtack
+							input#note-name-2(type='text' placeholder='To do...')
 							p 01.02.20
-						p
-							| Aspernatur assumenda blanditiis consectetur consequuntur delectus.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
+						textarea#note-description-2(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						button.delete-note
+							i.far.fa-trash-alt
+							| Delete
 					.note
 						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Do sports
+							i.fas.fa-thumbtack
+							input#note-name-3(type='text' placeholder='To do...')
 							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
+						textarea#note-description-3(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						button.delete-note
+							i.far.fa-trash-alt
+							| Delete
 					.note
 						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Make h/t
+							i.fas.fa-thumbtack
+							input#note-name-4(type='text' placeholder='To do...')
 							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
+						textarea#note-description-4(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						button.delete-note
+							i.far.fa-trash-alt
+							| Delete
 					.note
 						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Buy bread
-							p 02.03.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| My tasks
+							i.fas.fa-thumbtack
+							input#note-name-5(type='text' placeholder='To do...')
 							p 01.02.20
-						p
-							| Aspernatur assumenda blanditiis consectetur consequuntur delectus.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Do sports
-							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Make h/t
-							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Buy bread
-							p 02.03.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda blanditiis consectetur consequuntur delectus dicta dolore ? Facere!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| My tasks
-							p 01.02.20
-						p
-							| Aspernatur assumenda blanditiis consectetur consequuntur delectus.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-					.note
-						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Do sports
-							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque explicabo ipsam, iste nulla numquam provident quis quo quos repellendus tempora? Esse expedita illo inventore placeat quos totam, vel!
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
-		//.overlay
-		//.modal(data-modal="new-note")
-		//	.new-note-section
-		//		p Enter needed information:
-		//		input#note-name(type='text' placeholder='Name of the note')
-		//		input#note-date(type='date')
-		//		textarea#note-description(maxlength=250)
-		//		button.big-button
-		//			i.fas.fa-plus
-		//			| CREATE
+						textarea#note-description-5(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						button.delete-note
+							i.far.fa-trash-alt
+							| Delete
+		.overlay
+		.modal(data-modal="new-note")
+			.new-note-section
+				p Enter needed information:
+				input#note-name(type='text' placeholder='Name of the note')
+				input#note-date(type='date')
+				textarea#note-description(maxlength=250)
+				button.big-button
+					i.fas.fa-plus
+					| CREATE
