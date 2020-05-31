@@ -56,15 +56,12 @@
         <!--		| SIGN IN-->
         <div class="notes">
           <div class="note">
-            <div class="note-head">
-              <p><i class="fas fa-thumbtack"></i>Make h/t</p>
+            <div class="note-head"><i class="fas fa-thumbtack"></i>
+              <input id="note-name" type="text" placeholder="To do..."/>
               <p>01.02.20</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</p>
-            <div class="note-controls">
-              <button class="edit-note"><i class="far fa-edit"></i>Edit</button>
-              <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
-            </div>
+            <textarea id="note-description" maxlength="250" placeholder="Any details?">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.</textarea>
+            <button class="delete-note"><i class="far fa-trash-alt"></i>Delete</button>
           </div>
           <div class="note">
             <div class="note-head">
@@ -190,15 +187,15 @@
         </div>
       </div>
     </main>
-    <div class="overlay"></div>
-    <div data-modal="new-note" class="modal">
-      <div class="new-note-section">
-        <p>Enter needed information:</p>
-        <input id="note-name" type="text" placeholder="Name of the note"/>
-        <input id="note-date" type="date"/>
-        <textarea id="note-description" maxlength="250"></textarea>
-        <button class="big-button"><i class="fas fa-plus"></i>CREATE</button>
-      </div>
-    </div>
+    <!--.overlay-->
+    <!--.modal(data-modal="new-note")-->
+    <!--	.new-note-section-->
+    <!--		p Enter needed information:-->
+    <!--		input#note-name(type='text' placeholder='Name of the note')-->
+    <!--		input#note-date(type='date')-->
+    <!--		textarea#note-description(maxlength=250)-->
+    <!--		button.big-button-->
+    <!--			i.fas.fa-plus-->
+    <!--			| CREATE-->
   </body>
 </html>

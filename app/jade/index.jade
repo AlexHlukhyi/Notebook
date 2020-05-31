@@ -60,19 +60,13 @@ html(lang="en")
 				.notes
 					.note
 						.note-head
-							p
-								i.fas.fa-thumbtack
-								| Make h/t
+							i.fas.fa-thumbtack
+							input#note-name(type='text' placeholder='To do...')
 							p 01.02.20
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
-						.note-controls
-							button.edit-note
-								i.far.fa-edit
-								| Edit
-							button.delete-note
-								i.far.fa-trash-alt
-								| Delete
+						textarea#note-description(maxlength=250 placeholder='Any details?') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate dolor, ea esse ex molestiae.
+						button.delete-note
+							i.far.fa-trash-alt
+							| Delete
 					.note
 						.note-head
 							p
@@ -238,13 +232,13 @@ html(lang="en")
 							button.delete-note
 								i.far.fa-trash-alt
 								| Delete
-		.overlay
-		.modal(data-modal="new-note")
-			.new-note-section
-				p Enter needed information:
-				input#note-name(type='text' placeholder='Name of the note')
-				input#note-date(type='date')
-				textarea#note-description(maxlength=250)
-				button.big-button
-					i.fas.fa-plus
-					| CREATE
+		//.overlay
+		//.modal(data-modal="new-note")
+		//	.new-note-section
+		//		p Enter needed information:
+		//		input#note-name(type='text' placeholder='Name of the note')
+		//		input#note-date(type='date')
+		//		textarea#note-description(maxlength=250)
+		//		button.big-button
+		//			i.fas.fa-plus
+		//			| CREATE
